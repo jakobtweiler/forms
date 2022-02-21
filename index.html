@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h1 class="main-title">Create a user profile!</h1>
+        <h2 class="main-info">Get full access to all the functions by creating a user profile. It's completely free.</h2>
+        <label for="email" class="label">Email adress</label>
+        <input type="email" id="email" placeholder="Your Email" class="input">
+        <label for="password" class="label">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required minlength="8" class="input">
+        <label for="name" class="label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Firstname Lastname" class="input">
+        <div class="select-wrapper">
+            <label for="select" class="label">How did you hear about us?</label>
+            <select name="source" class="select" id="select">
+                <option value="commercial">Commercial</option>
+                <option value="frieand">From a friend</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <textarea name="message" id="" cols="10" rows="3" placeholder="If you picked other feel free to elaborate!"></textarea>
+        <div class="checkbox-container">
+            <label class="checkbox-label">
+                <input type="checkbox" checked>
+                <div class="input-title">I agree to the terms and service.</div>
+            </label>
+        </div>
+        <button type="submit">Create profile</button>
+    </form>
+</body>
+
+</html>
